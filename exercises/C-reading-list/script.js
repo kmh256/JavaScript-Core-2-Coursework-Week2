@@ -12,8 +12,9 @@ function readingList(books) {
   // - Use a `<ul>` to display the books. Creates a ul element and appends to body.
   let ulElement = document.createElement("ul");
   body.appendChild(ulElement);
+  ulElement.style.display = "flex";
+  ulElement.style.flexDirection = "row";
   ulElement.style.listStyle = "none";
-  ulElement.style.width = "300px";
 
   // - Iterate through the list of books.
   for (book of books) {
@@ -27,10 +28,10 @@ function readingList(books) {
 
     // Styling
     liElement.style.border = "2px solid black";
-    liElement.style.margin = "5px";
-    liElement.style.paddingLeft = "20px";
-    liElement.style.paddingBottom = "20px";
-    liElement.style.paddingTop = "5px";
+    liElement.style.margin = "20px";
+    liElement.style.padding = "20px";
+    liElement.style.width = "12%";
+    imgElement.style.width = "50%";
 
     // Appending elements as children
     ulElement.appendChild(liElement);
