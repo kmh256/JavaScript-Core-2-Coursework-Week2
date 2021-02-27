@@ -3,7 +3,7 @@ function shoppingList(arrayOfItems) {
   let body = document.querySelector("body");
   // Creates h1 element inside body
   let h1Tag = document.createElement("h1");
-  h1Tag.innerText = `My Shopping List`;
+  h1Tag.innerText = "My Shopping List";
   // Adds h1Tag as first child
   body.prepend(h1Tag);
 
