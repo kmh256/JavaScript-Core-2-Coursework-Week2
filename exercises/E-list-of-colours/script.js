@@ -1,6 +1,11 @@
 function listOfColours(colours) {
   let content = document.querySelector("#content");
 
+  // Creates h1 element
+  let h1Tag = document.createElement("h1");
+  h1Tag.innerText = "Select the colour of the words";
+  content.appendChild(h1Tag);
+
   // * Create a `<select>` element.
   let selectTag = document.createElement("select");
   content.appendChild(selectTag);
