@@ -11,7 +11,7 @@ function shoppingList(arrayOfItems) {
   let ulTag = document.createElement("ul");
 
   // * Each item from the array should be in a `<li>` tag. Creates a li tag, adds each item in shopping list as an li element, adds the li elements as children of ul.
-  for (item of arrayOfItems) {
+  for (let item of arrayOfItems) {
     let liTag = document.createElement("li");
     liTag.innerText = item;
     ulTag.appendChild(liTag);

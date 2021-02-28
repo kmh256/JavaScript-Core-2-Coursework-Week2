@@ -15,7 +15,7 @@ function listOfColours(colours) {
   content.appendChild(pTag);
 
   // * Iterate through the array of colours.
-  for (colour of colours) {
+  for (let colour of colours) {
     // * Each element in the array should add a `<option>` to the `<select>`, where the `<option>` is the element in the array.
     let optionTag = document.createElement("option");
     optionTag.value = colour;

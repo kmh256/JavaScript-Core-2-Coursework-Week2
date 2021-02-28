@@ -17,7 +17,7 @@ function readingList(books) {
   ulElement.style.listStyle = "none";
 
   // - Iterate through the list of books.
-  for (book of books) {
+  for (let book of books) {
     // - For each book, create a `<p>` element with the book title and author and append it to the page.
     let pElement = document.createElement("p");
     pElement.innerText = `Title: ${book.title} \n Author: ${book.author}`;

@@ -14,7 +14,7 @@ function highlightWords(paragraph, colours) {
   let pTag = document.createElement("p");
   content.appendChild(pTag);
 
-  for (colour of colours) {
+  for (let colour of colours) {
 
     // - Iterate over the colour options array and create an `<option>` element in the `<select>` for each element.
     let optionTag = document.createElement("option");
@@ -26,7 +26,7 @@ function highlightWords(paragraph, colours) {
   let paragraphArray = paragraph.split(" ");
 
   // - Iterate over the array of words.
-  for (word of paragraphArray) {
+  for (let word of paragraphArray) {
 
     // - For each word, create a `<span>` element and set the innerText to the word, plus a space - " ". Add this to the `<p>`.
     let spanTag = document.createElement("span");
