@@ -8,7 +8,6 @@ function highlightWords(paragraph, colours) {
 
   // * Create a `<select>` element.
   let selectTag = document.createElement("select");
-  content.appendChild(selectTag);
 
   // * Create a `<p>` element.
   let pTag = document.createElement("p");

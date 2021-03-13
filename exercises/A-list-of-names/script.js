@@ -1,6 +1,5 @@
 function listOfNames(arrayOfPeople) {
-  let content = document.querySelector("#content");
-
+  
   for (let person of arrayOfPeople) {
 
     // - Add a `<h1>` tag to the html containing the name of the person. Creates h1 element then changes inside of tags to names in object

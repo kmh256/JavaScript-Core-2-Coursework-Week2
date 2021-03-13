@@ -1,11 +1,10 @@
 function shoppingList(arrayOfItems) {
 
-  let body = document.querySelector("body");
-  // Creates h1 element inside body
+  // Creates h1 element inside content
   let h1Tag = document.createElement("h1");
   h1Tag.innerText = "My Shopping List";
   // Adds h1Tag as first child
-  body.prepend(h1Tag);
+  content.prepend(h1Tag);
 
   // * You should use an unordered list: `<ul>`. Creates a ul tag.
   let ulTag = document.createElement("ul");

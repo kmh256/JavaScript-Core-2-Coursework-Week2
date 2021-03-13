@@ -1,17 +1,15 @@
 function readingList(books) {
 
   // Creates h1 element inside body
-  let body = document.querySelector("body");
   let h1Element = document.createElement("h1");
   h1Element.innerText = `My Reading List`;
   h1Element.style.paddingLeft = "70px";
 
   // Adds h1Tag as first child
-  body.prepend(h1Element);
+  content.prepend(h1Element);
 
   // - Use a `<ul>` to display the books. Creates a ul element and appends to body.
   let ulElement = document.createElement("ul");
-  body.appendChild(ulElement);
   ulElement.style.display = "flex";
   ulElement.style.flexDirection = "row";
   ulElement.style.listStyle = "none";
@@ -20,7 +18,7 @@ function readingList(books) {
   for (let book of books) {
     // - For each book, create a `<p>` element with the book title and author and append it to the page.
     let pElement = document.createElement("p");
-    pElement.innerText = `Title: ${book.title} \n Author: ${book.author}`;
+    pElement.innerHTML = `Title: ${book.title} <br> Author: ${book.author}`.bold();
     // - Add an `<img>` to each book that links to a URL of the book cover.
     let imgElement = document.createElement("img");
     imgElement.src = book.image;
